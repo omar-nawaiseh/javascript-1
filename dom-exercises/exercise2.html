@@ -1,20 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Exercise #2: Changing colors</title>
     <style>
-        #mydiv {
-            width: 200px;
-            height: 200px;
-            border: 1px solid black;
-        }
+      #mydiv {
+        width: 200px;
+        height: 200px;
+        border: 1px solid black;
+      }
     </style>
     <script>
-        /* TODO: write JS code here */
+      
     </script>
-</head>
-<body>
-<div id="mydiv"></div>
-</body>
+  </head>
+  <body>
+    <div id="mydiv"></div>
+    <script>
+       document.getElementById("mydiv").style.backgroundColor="blue";
+  document.getElementById("mydiv").addEventListener("click",colorChange)
+
+function colorChange() {
+ if( document.getElementById("mydiv").style.backgroundColor == "blue"){
+   document.getElementById("mydiv").style.backgroundColor="red"; 
+  
+  } else if(document.getElementById("mydiv").style.backgroundColor=="red") {
+    document.getElementById("mydiv").style.backgroundColor="green";
+  }
+
+  else {
+    document.getElementById("mydiv").style.backgroundColor="blue";
+  }
+
+
+
+}
+    </script>
+
+  </body>
 </html>
